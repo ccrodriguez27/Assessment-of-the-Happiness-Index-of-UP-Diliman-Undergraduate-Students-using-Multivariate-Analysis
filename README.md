@@ -3,9 +3,7 @@
 AN ASSESSMENT OF THE HAPPINESS INDEX OF UP DILIMAN UNDERGRADUATE STUDENTS USING MULTIVARIATE ANALYSIS
 
 Submitted by:
-Lara Karmela Elio
-Iana Michelle Garcia
-Clarisse Rodriguez
+Lara Karmela Elio, Iana Michelle Garcia, Clarisse Rodriguez
 
 ABSTRACT
 
