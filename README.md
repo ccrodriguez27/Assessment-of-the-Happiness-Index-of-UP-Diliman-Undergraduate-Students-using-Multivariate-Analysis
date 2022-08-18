@@ -1,8 +1,7 @@
 # Assessment-of-the-Happiness-Index-of-UP-Diliman-Undergraduate-Students-using-Multivariate-Analysis
+https://ccrodriguez27.github.io/Assessment-of-the-Happiness-Index-of-UP-Diliman-Undergraduate-Students-using-Multivariate-Analysis/
 
 AN ASSESSMENT OF THE HAPPINESS INDEX OF UP DILIMAN UNDERGRADUATE STUDENTS USING MULTIVARIATE ANALYSIS
-
-https://ccrodriguez27.github.io/Assessment-of-the-Happiness-Index-of-UP-Diliman-Undergraduate-Students-using-Multivariate-Analysis/
 
 Submitted by:
 Lara Karmela Elio, Iana Michelle Garcia, Clarisse Rodriguez
