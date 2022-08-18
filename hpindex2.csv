@@ -1,0 +1,160 @@
+Age,Sex,Year,College,Are you affiliated with any organization inside the campus?,Please check all that apply., [I am happy], [I take vitamins/multivitamins on a daily basis.], [I get enough hours of sleep.], [I regularly engage in physical activities.], [I am happy with the way I look.], [I wake up feeling well rested.], [I am satisfied with my current degree program.], [I look forward to going to class every day.], [I  actively participate in my classes.], [I think that I am performing well in my degree program.], [I have learned much in my courses.], [I am satisfied with my stay in the university.], [I can find time for everything I want to do.], [I usually cram/procrastinate.], [I still give time in doing what I like (personal interests like hobbies).], [I watch multimedia content that entertains me.], [I feel happy when I use social media.]," [I enjoy life regardless of what is going on, getting the most out of everything.]", [There is a gap between what I would like to do and what I have actually done.], [I have a particular sense of meaning and purpose in my life.], [I am optimistic about the future.],I feel that I am in control  of my life,I feel that life is very rewarding.,I believe that happiness is a choice.,I get along well with my family.,I get along well with my peers.,I enjoy the company of animals/pets.,I am satisfied by the love I receive from the people around me.,I am comfortable while interacting with other people., [I always join extra-curricular activities in my college/university], [I feel safe within the campus premises.], [I feel safe going back to my house/dorm at night (coming from the campus).]
+19-21,Female,4,School of Statistics,Yes,"Academic, Cause Oriented",3,1,2,3,3,2,4,3,3,3,3,4,2,3,3,3,3,3,2,3,3,3,3,4,3,4,4,4,3,3,3,3
+19-21,Female,5,College of Engineering,Yes,Academic,3,1,3,2,3,3,3,2,2,3,3,4,2,2,2,4,3,2,2,2,2,2,3,3,4,3,3,3,2,2,3,3
+19-21,Female,4,College of Social Sciences and Philosophy,Yes,"Academic, Cause Oriented, Community Service",3,1,4,3,2,2,4,2,2,3,3,3,2,1,3,3,2,3,1,3,3,3,3,3,3,3,3,3,2,1,3,3
+19-21,Male,3,School of Statistics,No,N/A,3,1,3,1,3,3,2,2,2,3,2,3,2,2,3,3,3,3,2,3,3,2,3,3,3,3,4,4,2,1,3,2
+19-21,Female,1,College of Science,No,N/A,1,1,2,1,2,2,1,1,2,2,2,2,1,1,4,4,3,2,1,2,2,2,2,3,3,3,3,3,2,2,3,3
+19-21,Female,5,Virata School of Business,Yes,"Academic, Religious, Provincial, Community Service",3,3,1,2,3,1,3,2,3,2,2,3,2,2,2,4,3,3,2,4,4,2,4,3,4,3,1,2,3,4,2,2
+19-21,Female,4,School of Statistics,No,N/A,4,3,1,3,3,2,2,3,2,2,3,3,4,3,3,4,3,4,3,3,4,3,3,3,4,4,1,4,3,2,2,2
+19-21,Male,4,School of Statistics,Yes,Academic,3,1,3,1,3,3,3,4,2,3,4,3,3,1,3,4,2,3,1,2,2,2,3,3,3,3,3,2,3,1,3,3
+19-21,Female,4,School of Statistics,Yes,Academic,3,1,3,2,3,3,3,1,2,2,2,4,2,2,3,4,3,2,1,1,2,3,3,4,4,4,3,3,3,3,3,2
+19-21,Female,3,School of Statistics,No,N/A,3,1,2,3,2,2,3,3,3,3,3,3,3,3,2,3,3,2,2,2,3,2,3,3,2,3,2,2,3,2,2,2
+19-21,Female,4,College of Home Economics,No,N/A,4,2,4,3,4,4,4,4,4,4,4,4,3,1,3,3,2,4,2,4,4,4,4,4,3,3,4,3,3,2,3,3
+19-21,Female,4,College of Science,Yes,"Academic, Provincial",3,2,2,2,3,2,3,3,3,2,3,3,3,2,3,3,3,3,3,3,3,3,3,3,4,3,2,3,3,2,2,2
+19-21,Female,4,School of Statistics,Yes,Academic,4,1,3,2,3,1,3,2,1,2,2,3,3,4,2,4,1,4,1,2,3,3,3,1,3,3,3,4,3,2,4,4
+19-21,Female,4,School of Statistics,Yes,"Cause Oriented, Provincial",3,1,2,2,2,2,1,2,3,2,3,2,2,2,3,4,4,2,2,2,2,2,2,3,3,2,4,2,3,1,2,2
+19-21,Female,4,College of Arts and Letters,Yes,Cause Oriented,3,1,1,2,2,2,3,2,2,2,3,3,2,1,2,3,2,2,2,2,2,2,2,3,3,3,3,3,3,2,2,2
+19-21,Female,3,College of Engineering,Yes,Academic,2,3,3,2,2,3,2,2,3,2,3,2,1,2,4,3,2,2,2,2,1,2,2,3,2,2,4,2,2,1,3,3
+19-21,Female,3,School of Statistics,Yes,"Cause Oriented, Special Interest",3,4,3,2,3,3,3,3,3,3,4,3,2,1,3,4,4,4,1,2,2,2,3,3,3,3,2,2,2,1,1,1
+19-21,Female,4,School of Statistics,Yes,Academic,3,2,2,2,3,2,3,2,3,3,2,4,3,1,3,4,2,2,3,3,4,4,3,3,3,4,4,3,3,2,3,3
+25-27,Male,4,College of Arts and Letters,Yes,"Academic, Cause Oriented, Religious, Provincial, Special Interest, Alumni Association ",4,2,4,3,3,4,4,4,3,4,3,3,4,1,4,4,3,3,1,3,3,3,3,4,4,4,4,4,4,4,2,2
+19-21,Female,4,School of Statistics,Yes,"Academic, Cause Oriented",3,2,2,1,3,2,3,2,3,2,3,4,2,2,3,2,2,2,2,3,3,2,3,3,4,4,4,3,3,2,3,3
+19-21,Female,4,College of Engineering,Yes,"Academic, Provincial",3,2,2,3,3,2,3,3,3,2,3,3,3,2,3,4,3,3,2,3,3,3,4,3,4,3,3,4,3,4,3,3
+19-21,Female,4,School of Statistics,Yes,Academic,3,3,3,2,3,2,3,2,2,3,3,3,2,2,3,3,3,3,2,3,3,3,3,3,4,4,2,3,3,2,1,3
+19-21,Male,5,College of Engineering,Yes,"Academic, Cause Oriented",1,3,1,3,2,1,2,2,2,4,4,1,1,2,2,3,1,2,2,2,2,2,2,2,3,3,4,1,1,1,1,2
+19-21,Female,4,School of Statistics,Yes,"Academic, Provincial, Special Interest",3,2,2,3,2,2,3,3,3,2,3,3,2,2,3,3,3,2,2,2,2,2,3,3,4,4,3,4,3,3,3,3
+19-21,Female,1,College of Arts and Letters,No,N/A,2,2,2,1,1,4,2,2,3,2,2,4,3,1,2,4,4,4,1,3,2,1,1,2,4,3,4,4,4,2,2,4
+19-21,Female,4,School of Statistics,Yes,"Academic, Cause Oriented, Religious, Provincial",3,1,3,1,3,1,3,1,2,1,3,3,1,1,3,4,3,1,1,3,1,1,3,1,3,3,2,2,3,2,2,1
+19-21,Female,4,College of Architecture,Yes,"Cause Oriented, Provincial",4,2,2,2,2,2,3,2,2,2,2,3,2,1,3,3,4,3,2,3,3,3,3,3,3,3,3,4,3,2,3,3
+19-21,Female,4,College of Mass Communication,Yes,Academic,3,1,2,2,3,2,4,2,3,4,4,2,2,1,3,3,3,3,1,3,3,2,3,3,4,3,4,3,3,2,2,4
+19-21,Female,3,Virata School of Business,Yes,Academic,3,4,3,2,3,4,3,3,3,3,4,2,1,2,4,3,3,3,2,2,2,2,3,4,4,4,4,3,4,3,2,1
+16-18,Male,1,School of Statistics,No,N/A,2,2,2,2,2,2,3,3,3,2,2,3,3,1,3,4,3,3,2,3,3,3,3,3,2,3,3,3,3,3,2,2
+19-21,Female,4,School of Statistics,No,N/A,3,1,2,2,2,2,2,2,3,2,3,3,1,2,4,4,3,3,1,3,3,2,3,3,3,3,1,3,2,2,3,3
+19-21,Male,4,College of Social Sciences and Philosophy,Yes,"Academic, Cause Oriented",2,2,1,3,2,1,3,2,3,4,4,3,1,1,4,4,2,2,1,2,2,1,2,2,3,4,3,3,2,2,2,3
+19-21,Female,4,School of Statistics,Yes,"Academic, Provincial",3,2,1,3,3,2,3,3,3,2,3,4,2,3,3,4,3,3,2,3,3,3,3,2,3,3,1,4,2,2,2,1
+19-21,Male,4,School of Statistics,Yes,"Academic, Cause Oriented",4,4,3,3,3,3,4,4,4,4,4,4,3,2,4,4,3,4,3,4,4,4,4,4,4,4,3,4,3,3,4,4
+19-21,Female,1,Virata School of Business,Yes,"Academic, Cause Oriented",3,2,2,2,2,2,2,2,2,2,3,3,3,1,4,4,3,2,1,3,3,3,4,3,4,4,4,3,3,2,3,3
+16-18,Female,1,School of Statistics,No,N/A,1,4,1,1,3,1,4,2,2,3,3,3,1,1,3,3,3,1,1,2,2,3,2,1,1,3,4,2,2,2,2,2
+19-21,Female,1,School of Statistics,No,N/A,3,3,3,2,2,2,1,1,1,2,3,1,3,2,3,4,3,2,1,2,2,2,2,2,4,4,2,3,2,1,3,3
+16-18,Female,1,School of Statistics,No,N/A,3,2,3,2,3,3,4,4,3,3,3,3,2,3,3,3,3,3,2,2,2,3,2,2,2,3,3,3,2,2,3,2
+19-21,Female,1,School of Statistics,No,N/A,3,2,2,1,2,1,3,3,3,3,3,3,2,2,3,3,3,3,1,3,4,3,2,3,3,4,3,4,4,3,3,3
+16-18,Male,1,School of Statistics,No,N/A,3,2,2,2,3,2,4,3,3,3,4,4,3,2,3,4,3,2,2,2,3,2,2,3,3,3,4,3,3,3,2,3
+19-21,Male,1,School of Statistics,No,N/A,3,2,4,2,3,4,4,4,4,4,4,4,4,2,4,4,3,4,3,4,4,4,4,4,4,3,4,4,3,2,3,3
+19-21,Female,4,College of Arts and Letters,Yes,"Academic, Cause Oriented",2,3,2,2,2,2,4,3,4,3,4,4,2,2,3,3,2,2,2,2,3,2,2,2,3,3,3,3,3,2,2,3
+16-18,Male,1,School of Statistics,Yes,Religious,3,2,2,2,3,2,3,3,2,3,3,3,2,3,3,3,2,3,3,2,3,2,3,3,3,3,3,3,3,2,2,2
+19-21,Female,4,School of Statistics,Yes,"Cause Oriented, Provincial",3,1,3,4,1,3,3,1,1,3,3,3,1,1,2,4,1,2,3,1,2,2,1,1,3,3,3,2,1,1,3,2
+19-21,Male,5,College of Engineering,Yes,"Academic, Religious",4,3,1,2,3,2,4,3,3,4,4,4,3,3,3,3,2,3,4,3,4,4,4,4,4,3,2,3,3,3,2,2
+19-21,Female,4,College of Arts and Letters,Yes,"Academic, Provincial, Special Interest",2,1,2,2,2,2,2,2,2,1,2,2,2,1,3,3,2,2,2,2,1,1,2,3,2,3,3,3,2,2,3,3
+19-21,Female,4,School of Statistics,Yes,"Academic, National/Inter-collegiate Organization",2,1,2,1,2,1,3,2,3,2,3,3,2,2,3,3,2,1,1,1,2,1,2,1,2,3,3,2,1,3,2,2
+16-18,Female,1,College of Fine Arts,No,N/A,2,1,2,2,1,2,1,1,2,1,1,1,2,1,2,4,2,2,1,3,3,2,3,3,1,2,3,1,1,2,1,1
+19-21,Male,4,College of Engineering,Yes,"Academic, Sports and Recreational",4,2,2,3,3,2,3,2,2,2,2,4,3,2,3,4,3,3,3,4,4,3,3,4,2,4,3,4,3,3,3,3
+19-21,Male,2,College of Social Sciences and Philosophy,No,N/A,3,1,3,1,2,3,2,2,2,3,2,3,3,2,3,4,3,3,2,3,3,3,3,3,3,3,4,4,2,1,3,2
+19-21,Male,1,College of Engineering,No,N/A,3,3,2,3,3,3,3,2,2,2,3,4,2,2,4,4,2,4,2,3,3,3,4,3,3,3,3,3,2,3,3,2
+19-21,Female,3,College of Science,Yes,Academic,3,2,2,2,3,2,4,3,3,3,3,3,1,2,3,3,3,3,3,3,3,3,3,3,2,3,3,3,3,2,3,3
+19-21,Female,4,College of Science,Yes,"Cause Oriented, Sports and Recreational",3,1,2,3,3,2,3,3,2,2,3,3,2,1,4,3,3,3,2,3,3,2,3,2,2,3,2,3,3,3,3,3
+19-21,Female,4,College of Social Sciences and Philosophy,Yes,Environment,3,3,2,3,4,2,4,3,3,3,4,3,1,3,3,4,3,3,2,4,3,3,3,4,3,3,3,3,3,2,3,3
+19-21,Female,4,College of Architecture,Yes,"Cause Oriented, Mass Oriented",3,3,2,3,3,3,3,3,3,3,4,4,3,3,3,3,3,3,3,3,4,4,4,3,3,4,4,4,3,4,3,3
+22-24,Female,5,College of Home Economics,No,N/A,3,2,3,3,3,3,3,2,3,3,3,3,2,1,2,3,3,3,2,3,2,2,2,2,3,3,3,2,2,2,3,3
+19-21,Female,4,College of Social Sciences and Philosophy,Yes,"Special Interest, Community Service",1,1,4,3,4,4,4,4,3,4,4,1,1,2,3,3,3,2,1,1,1,1,1,1,4,3,3,2,2,1,1,1
+19-21,Male,4,School of Statistics,Yes,"Academic, Cause Oriented, Socio-academic",2,2,1,1,3,2,3,2,3,3,4,2,2,2,3,4,3,2,2,3,3,3,2,1,3,3,4,2,2,2,2,2
+19-21,Male,4,College of Science,No,N/A,3,2,3,2,3,3,3,3,3,3,3,3,2,2,3,3,3,4,2,3,3,3,3,4,4,3,2,3,3,2,3,3
+16-18,Male,1,College of Science,Yes,Academic,4,3,3,3,3,3,4,3,3,3,4,4,2,3,3,2,1,3,2,3,3,3,3,3,2,3,2,3,3,1,2,1
+19-21,Male,4,NCPAG,Yes,"Academic, Sports and Recreational, Provincial",3,3,3,3,3,2,3,3,3,3,3,3,2,2,3,3,2,3,2,3,3,2,2,3,2,3,2,3,3,3,2,3
+19-21,Female,4,College of Engineering,Yes,"Academic, Sports and Recreational",3,2,4,3,3,2,3,3,3,3,4,3,2,2,3,3,3,3,2,3,3,2,3,4,3,3,2,3,2,2,3,3
+19-21,Female,5,College of Mass Communication,Yes,"Academic, Special Interest",3,1,1,1,3,2,4,2,2,3,3,3,3,3,4,4,3,4,1,4,3,3,2,3,1,2,4,2,1,2,2,3
+19-21,Male,4,College of Engineering,Yes,"Academic, Sports and Recreational",3,1,2,3,2,2,1,2,3,1,3,3,3,1,3,3,3,2,2,2,3,2,3,1,3,3,3,3,3,4,2,2
+19-21,Male,4,College of Engineering,Yes,"Sports and Recreational, Provincial",2,1,2,3,3,2,3,2,2,3,3,3,1,1,3,3,3,2,3,1,3,2,3,2,2,3,3,2,2,3,2,2
+19-21,Female,4,College of Engineering,Yes,"Academic, Sports and Recreational, Provincial",2,3,2,2,3,1,4,1,1,1,2,3,1,1,1,4,2,2,1,2,3,3,2,3,4,3,4,2,3,2,2,2
+19-21,Male,4,College of Engineering,Yes,"Academic, Dormitory Assistance",3,2,3,1,4,3,4,3,3,3,4,4,3,2,4,4,4,4,2,4,4,4,4,4,4,4,3,4,2,1,2,1
+19-21,Male,3,College of Fine Arts,Yes,Provincial,3,3,3,2,3,2,4,2,2,3,3,4,2,1,4,4,3,4,3,3,4,3,4,3,4,3,3,3,3,2,3,3
+19-21,Female,4,Virata School of Business,Yes,"Academic, Cause Oriented, Special Interest",2,3,1,2,2,3,3,2,2,2,3,3,1,1,3,3,3,3,2,3,3,3,2,2,2,2,3,2,2,3,1,2
+19-21,Female,4,College of Social Sciences and Philosophy,Yes,"Academic, Cause Oriented, Community Service, Volunteer group",3,2,3,1,2,3,3,3,3,3,3,3,2,4,3,3,3,2,3,3,3,2,3,2,3,4,3,3,3,3,2,2
+19-21,Female,4,College of Engineering,Yes,"Academic, Cause Oriented, Provincial",3,1,1,3,3,2,1,3,2,1,3,3,3,1,3,4,4,3,1,4,3,2,3,4,4,4,4,3,3,2,2,2
+19-21,Female,4,School of Statistics,Yes,Academic,3,2,2,3,3,2,3,2,2,1,3,3,3,1,3,3,3,3,1,2,3,3,3,2,3,3,4,3,2,1,3,1
+19-21,Female,4,College of Architecture,Yes,"Academic, Cause Oriented, Sorority",3,2,1,2,3,1,3,2,2,3,3,3,1,2,2,3,3,3,2,2,3,3,2,2,3,3,4,3,3,2,3,3
+19-21,Female,5,College of Engineering,Yes,Special Interest,3,1,1,1,2,1,3,1,3,1,3,2,1,1,2,3,1,3,1,3,2,2,2,2,3,3,4,1,2,1,2,2
+19-21,Female,4,School of Statistics,Yes,Sports and Recreational,3,1,3,3,3,3,3,2,2,2,2,2,3,2,3,4,4,2,1,1,2,2,3,4,4,3,2,3,1,1,3,3
+19-21,Female,3,School of Statistics ,Yes,Academic,3,1,2,2,2,3,3,3,2,3,3,3,3,1,4,4,4,3,2,2,1,3,3,2,4,3,4,3,3,2,3,3
+19-21,Male,4,School of Statistics,Yes,Academic,2,1,2,2,3,2,3,2,3,2,3,2,2,1,2,4,4,3,1,3,3,3,3,3,3,3,4,3,2,2,3,3
+22-24,Male,5,School of Statistics,Yes,Academic,3,3,4,2,2,1,2,2,1,1,3,4,2,1,4,4,3,3,2,2,2,3,3,3,3,3,2,2,1,2,2,2
+19-21,Female,4,College of Science,No,N/A,3,1,2,2,2,2,3,3,3,3,3,3,1,1,2,3,3,2,2,1,2,2,3,3,3,4,3,3,3,1,3,1
+19-21,Female,4,College of Arts and Letters,Yes,"Academic, Religious",3,1,1,2,1,2,3,2,3,2,3,4,1,2,2,3,1,2,2,2,2,2,2,2,3,3,4,3,2,2,1,1
+19-21,Male,4,College of Engineering,Yes,"Academic, Sports and Recreational, Provincial, Special Interest",2,1,2,2,1,2,3,3,3,3,3,3,3,2,3,3,3,3,2,2,2,2,2,2,2,2,3,2,2,3,3,3
+19-21,Male,1,School of Statistics ,No,N/A,3,3,2,2,2,2,3,2,3,3,4,4,1,2,3,4,4,2,2,1,1,1,1,3,3,3,3,3,3,2,1,2
+16-18,Female,1,College of Science,Yes,Provincial,3,3,2,2,3,2,1,3,2,2,4,3,3,2,4,3,4,4,1,2,2,2,4,4,4,4,4,4,3,2,3,2
+19-21,Female,4,College of Home Economics,No,N/A,3,4,2,2,3,2,3,3,3,3,3,3,2,1,3,3,3,2,1,3,4,3,3,3,3,3,4,3,2,2,3,2
+19-21,Female,4,College of Science,Yes,Religious,3,2,3,3,3,3,3,2,2,2,3,3,3,1,4,4,2,4,1,3,3,2,4,2,3,3,3,4,3,3,3,2
+19-21,Female,5,College of Architecture,Yes,"Academic, Cause Oriented",3,1,1,3,3,2,3,2,3,3,3,3,1,1,3,3,2,1,2,3,2,2,3,3,3,3,4,3,3,2,3,3
+19-21,Female,4,School of Statistics,Yes,Academic,3,1,3,1,3,3,3,2,2,2,3,3,2,1,3,4,3,2,2,4,3,2,3,4,4,3,2,2,2,3,2,3
+19-21,Male,4,College of Science,No,N/A,2,2,3,2,2,2,4,2,2,2,3,3,2,2,2,3,2,2,2,2,2,2,2,3,3,2,3,2,2,2,2,2
+19-21,Female,4,School of Statistics,Yes,Academic,3,3,1,2,2,1,2,2,2,2,4,4,2,1,4,4,4,3,1,3,3,1,2,3,3,3,1,3,3,1,1,3
+16-18,Female,1,School of Statistics,No,N/A,4,1,2,2,4,2,3,2,3,3,3,4,3,2,3,4,3,4,2,3,4,3,4,4,4,3,4,4,3,2,2,3
+19-21,Male,4,College of Engineering ,Yes,"Academic, Sports and Recreational, Provincial",3,1,3,3,2,2,3,1,2,4,4,4,4,1,4,4,4,4,1,1,2,2,3,2,4,4,3,3,3,3,2,2
+19-21,Female,4,College of Engineering,Yes,Academic,3,2,1,3,3,1,3,2,3,3,3,3,2,1,2,2,2,3,2,3,2,3,3,3,3,3,3,3,3,3,2,2
+19-21,Female,4,College of Social Sciences and Philosophy,Yes,"Academic, Cause Oriented",3,3,1,3,1,1,4,2,2,3,3,3,2,2,4,4,3,3,4,3,2,2,3,3,4,4,4,2,4,1,2,2
+19-21,Female,4,School of Statistics,Yes,Socio-Academic,2,1,1,1,1,1,2,1,1,1,3,2,1,1,3,3,4,3,2,1,1,1,1,3,3,3,4,2,2,1,2,2
+19-21,Female,4,College of Science,Yes,Special Interest,3,3,2,2,3,1,3,2,2,2,4,4,2,1,4,4,3,3,2,3,3,3,3,3,3,4,3,4,3,2,3,3
+19-21,Female,4,College of Engineering,Yes,"Academic, Special Interest",3,2,1,2,3,2,2,2,3,2,3,3,2,2,3,3,3,4,2,3,3,3,3,3,4,4,4,4,4,2,2,2
+19-21,Male,4,College of Engineering,Yes,Provincial,2,3,2,2,3,2,3,3,2,2,2,2,4,1,4,4,3,2,1,3,2,3,3,3,4,4,3,4,4,2,3,2
+19-21,Female,4,School of Statistics,Yes,"Academic, Cause Oriented",2,1,1,2,1,1,2,2,3,1,3,3,1,2,3,3,2,2,2,3,3,2,2,3,4,3,1,3,3,3,2,1
+16-18,Female,1,School of Statistics,No,N/A,2,1,2,2,2,2,2,2,3,3,3,3,3,1,3,4,3,2,2,2,2,3,2,2,2,3,2,2,2,2,3,3
+19-21,Male,4,School of Statistics,Yes,"Academic, Sports and Recreational",3,1,1,3,3,1,2,3,3,1,3,2,2,1,3,3,3,3,2,3,4,3,3,3,4,4,4,3,4,2,3,3
+19-21,Female,4,School of Statistics,Yes,"Academic, Sports and Recreational, Provincial",3,3,2,3,3,2,3,2,3,2,3,3,2,1,3,3,3,3,2,3,3,3,3,3,3,3,4,3,3,3,3,3
+19-21,Female,4,College of Arts and Letters,Yes,"Academic, Cause Oriented, Sports and Recreational, Community Service",2,2,1,3,2,2,4,3,3,2,4,2,1,3,2,3,2,1,2,2,2,2,2,3,3,3,4,2,2,2,2,1
+19-21,Female,4,School of Statistics,Yes,"Academic, Cause Oriented",3,2,2,2,4,2,2,3,3,2,4,4,1,2,2,3,3,2,2,1,3,3,3,3,4,4,3,3,4,3,1,1
+19-21,Male,4,College of Engineering,Yes,"Academic, Special Interest",3,2,2,2,3,2,3,2,2,2,3,3,2,1,4,3,2,2,1,3,2,3,2,2,3,3,4,3,3,3,3,2
+19-21,Female,4,Virata School of Business,Yes,Academic,3,4,4,2,3,3,3,3,2,2,4,3,1,4,4,4,4,4,1,2,3,2,4,4,4,4,3,4,2,1,3,2
+19-21,Male,4,College of Fine Arts,Yes,Academic,2,2,1,2,1,1,3,3,3,1,4,3,1,1,4,4,3,2,1,2,1,1,2,3,2,3,4,2,2,2,3,3
+19-21,Female,2,College of Arts and Letters,No,N/A,2,1,1,2,3,1,1,1,3,2,1,3,3,1,3,4,3,3,1,1,1,1,1,4,2,3,4,3,3,3,2,2
+19-21,Male,5,College of Engineering,No,N/A,3,3,2,2,2,2,4,3,2,3,3,2,2,1,4,3,2,3,2,3,4,2,2,2,3,3,3,3,3,2,3,2
+19-21,Male,5,College of Engineering,Yes,Academic,3,1,2,2,2,2,2,2,2,2,3,3,2,2,3,3,3,3,2,2,2,2,3,3,2,3,2,4,3,2,3,2
+19-21,Male,5,School of Statistics,Yes,"Academic, Cause Oriented",2,1,2,2,2,2,4,3,3,3,4,3,2,2,3,3,2,3,3,3,2,2,3,2,4,4,3,3,4,2,3,3
+16-18,Female,1,School of Statistics ,No,N/A,3,3,2,2,2,3,4,3,3,3,3,3,2,2,3,3,2,3,2,3,3,3,3,3,2,3,4,3,3,3,3,3
+19-21,Male,1,School of Statistics,No,N/A,2,1,3,2,2,3,3,3,3,2,2,3,2,1,4,4,4,3,1,2,2,1,2,4,2,3,1,2,2,2,2,1
+19-21,Male,4,Virata School of Business,Yes,Academic,3,3,2,1,2,1,3,1,2,2,4,4,1,2,2,3,3,2,3,3,3,3,3,4,3,4,3,3,3,3,2,2
+19-21,Female,3,School of Statistics,Yes,"Academic, Cause Oriented, Sports and Recreational",4,3,2,3,2,2,3,3,3,3,4,2,1,4,3,3,3,4,3,3,3,3,4,4,3,4,4,4,3,4,3,2
+19-21,Female,1,School of Statistics,No,N/A,3,4,2,2,3,2,3,3,3,3,4,3,3,1,3,4,3,3,2,3,3,3,3,3,3,3,4,3,3,2,3,3
+16-18,Female,1,School of Statistics,No,N/A,3,1,1,2,2,2,3,2,2,3,3,3,2,2,3,3,3,2,2,2,2,2,3,3,3,3,4,3,3,2,2,2
+19-21,Female,4,School of Statistics,Yes,"Academic, Cause Oriented",1,1,2,2,3,1,2,1,1,1,3,3,1,1,3,3,2,2,2,1,1,1,2,2,1,2,4,3,3,3,3,2
+16-18,Female,1,School of Statistics,No,N/A,2,1,3,2,2,2,2,2,2,2,3,4,1,2,3,3,3,2,2,2,2,2,2,3,3,3,2,2,2,2,2,2
+16-18,Male,1,School of Statistics,No,N/A,3,2,2,3,3,2,3,2,3,3,3,4,3,2,3,4,3,3,2,3,4,4,3,3,2,3,4,2,3,2,2,2
+19-21,Male,1,School of Statistics,Yes,Community Service,3,4,3,2,3,2,3,2,3,3,4,3,3,3,3,3,3,4,2,4,4,3,3,4,4,3,3,3,3,3,3,2
+19-21,Female,1,School of Statistics,No,N/A,3,2,3,3,3,3,3,2,2,3,3,3,2,3,3,3,3,3,2,3,2,2,3,3,3,3,2,3,3,2,3,3
+16-18,Female,1,School of Statistics,No,N/A,3,3,2,2,2,2,3,3,2,3,3,3,2,3,3,3,3,2,2,3,4,3,4,3,3,3,4,4,2,2,3,3
+16-18,Male,1,School of Statistics,No,N/A,3,4,3,3,3,4,4,3,4,3,4,4,3,3,3,3,3,3,2,4,4,3,4,4,4,4,4,4,3,3,3,3
+16-18,Female,1,School of Statistics,Yes,Academic,2,3,2,3,3,2,3,2,2,3,3,3,1,2,2,3,3,3,2,3,2,2,2,3,1,3,4,3,3,3,2,2
+19-21,Male,1,College of Engineering,Yes,Academic,3,2,2,2,3,2,3,3,3,2,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,2,3,3,3,3,3
+19-21,Male,1,School of Statistics,No,N/A,3,2,2,2,2,2,4,3,1,3,3,3,4,1,4,4,3,4,1,3,3,3,2,2,3,3,4,3,3,2,3,2
+19-21,Female,2,School of Statistics,Yes,Special Interest,3,4,3,3,2,2,3,1,2,3,3,3,3,2,3,4,3,3,3,2,3,2,3,3,3,3,1,3,3,2,2,2
+19-21,Female,4,School of Statistics,Yes,Academic,2,2,2,2,3,2,3,3,3,2,3,3,3,2,3,3,2,3,2,2,3,2,2,3,3,3,3,2,3,2,3,3
+16-18,Male,1,School of Statistics,No,N/A,4,1,2,3,4,2,4,3,3,3,4,4,3,3,4,4,4,4,2,4,4,4,4,4,4,4,4,4,4,3,2,2
+19-21,Female,1,School of Statistics,No,N/A,3,1,2,1,2,2,2,2,2,2,2,2,3,1,4,3,3,2,1,3,2,3,2,4,3,3,3,3,4,1,2,2
+22-24,Female,3,College of Education,Yes,Academic,3,2,3,2,2,2,2,2,2,1,2,2,1,4,1,1,1,1,4,1,1,1,1,1,1,1,1,1,2,1,2,1
+19-21,Female,2,School of Statistics,No,N/A,4,4,3,3,3,3,3,4,3,3,4,4,2,2,3,3,3,3,2,2,3,3,3,2,3,3,4,4,3,2,3,3
+19-21,Male,4,Virata School of Business,Yes,Academic,3,2,3,2,3,3,4,2,2,2,4,3,2,1,3,4,3,2,1,2,3,2,3,3,3,3,4,3,2,1,3,2
+22-24,Female,5,College of Engineering,Yes,"Academic, Cause Oriented, Sports and Recreational, Regional, Political",2,3,1,3,2,2,4,3,3,3,3,3,2,3,4,3,3,2,2,3,3,3,3,4,3,3,3,3,3,3,2,2
+19-21,Female,4,College of Social Sciences and Philosophy,Yes,"Academic, Cause Oriented, Provincial",3,1,2,1,3,2,2,2,1,2,3,3,2,2,3,3,3,2,2,2,2,2,2,3,3,3,3,3,2,2,2,3
+16-18,Female,1,School of Statistics,No,N/A,2,2,2,3,3,2,4,2,3,3,4,3,2,4,2,4,4,2,3,3,3,3,3,2,4,4,4,4,4,2,3,2
+19-21,Male,4,College of Engineering,Yes,"Academic, Sports and Recreational",1,1,2,4,1,1,4,3,3,4,4,4,1,3,1,4,4,2,1,4,4,3,2,2,4,3,4,4,4,3,4,4
+19-21,Female,4,School of Statistics,Yes,"Academic, Cause Oriented, Sports and Recreational",3,2,2,2,2,2,2,2,2,2,4,3,2,2,3,4,4,3,2,3,3,3,3,3,4,4,4,3,3,2,2,2
+19-21,Female,3,College of Engineering,Yes,"Academic, Religious, Provincial",3,1,1,1,3,3,3,2,2,2,3,3,2,2,3,3,3,3,1,3,3,3,3,4,4,3,1,3,3,2,3,2
+19-21,Female,4,NCPAG,Yes,"Academic, Cause Oriented, Sports and Recreational, Provincial",2,1,2,3,3,2,2,2,2,3,3,3,2,2,3,4,3,3,2,2,3,3,3,3,3,3,3,2,2,3,2,3
+16-18,Female,4,College of Engineering,Yes,"Academic, Provincial",3,1,1,3,3,2,3,3,3,2,3,3,3,2,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,2,3,3
+19-21,Female,4,School of Statistics,Yes,"Academic, Special Interest",2,1,1,1,2,2,3,2,3,2,4,4,3,1,3,4,3,2,2,2,2,2,3,3,4,4,4,3,2,2,3,3
+19-21,Male,4,School of Statistics,No,N/A,3,2,1,3,3,2,3,1,2,2,3,3,2,1,4,4,3,3,2,2,3,3,3,2,3,3,3,3,3,1,3,4
+16-18,Female,1,College of Science,Yes,Sports and Recreational,4,4,3,4,4,3,3,2,4,3,4,4,2,1,4,4,3,4,4,4,4,4,4,4,4,3,3,4,2,3,3,3
+19-21,Female,4,College of Engineering,Yes,"Academic, Special Interest",3,1,3,2,2,2,2,1,2,2,3,3,2,2,3,4,2,2,2,2,4,2,1,1,1,3,1,2,2,2,3,3
+19-21,Male,4,School of Statistics,Yes,"Academic, Cause Oriented, Fraternity, Special Interest",3,2,3,4,3,2,4,3,3,3,4,3,3,2,4,4,4,3,2,3,4,3,3,4,3,4,4,4,4,4,3,4
+16-18,Female,1,Virata School of Business,Yes,Special Interest,3,2,3,1,3,3,2,1,3,2,3,3,2,2,3,3,3,3,1,2,2,2,3,3,3,3,3,3,3,2,3,2
+19-21,Male,4,School of Statistics,Yes,Academic,4,1,3,3,2,3,2,3,4,2,4,4,2,1,4,4,3,4,1,3,4,3,4,4,4,4,4,4,4,4,4,3
+22-24,Female,2,College of Social Work and Community Development,No,N/A,2,2,2,3,3,2,4,3,3,2,4,3,1,4,3,3,2,1,2,2,2,1,2,2,1,3,4,2,2,2,3,3
+16-18,Female,2,College of Engineering,Yes,"Academic, Cause Oriented",3,3,2,3,3,2,3,3,2,2,4,3,2,1,3,3,3,4,3,3,3,2,2,2,3,4,3,4,4,3,3,4
+19-21,Female,4,School of Statistics,Yes,"Academic, Special Interest",2,3,1,2,3,2,2,2,3,2,3,3,1,3,2,3,3,3,3,3,3,3,3,3,2,3,1,2,2,2,1,1
+19-21,Female,1,School of Statistics,No,N/A,3,3,3,3,3,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,4,3,3,3,3,3,3,3,3
+19-21,Female,4,School of Statistics,Yes,"Academic, Sports and Recreational",4,3,3,3,3,3,3,3,3,3,3,3,2,3,3,4,3,3,3,3,4,3,4,4,4,4,4,4,4,2,3,3
+19-21,Male,3,College of Fine Arts,No,N/A,3,3,2,3,3,1,3,2,3,3,3,3,3,1,4,4,2,3,2,2,2,3,2,2,4,3,3,3,2,2,3,3
+19-21,Female,3,School of Statistics ,Yes,"Academic, Cause Oriented, Provincial",3,1,2,2,2,2,2,2,2,3,3,3,2,2,3,3,2,3,2,3,3,2,2,3,3,3,4,2,2,2,2,2
+19-21,Male,3,School of Statistics,Yes,Academic,2,1,2,2,2,1,3,2,2,1,2,4,2,1,3,3,2,2,1,2,2,2,2,3,3,3,3,3,2,3,3,3
+16-18,Female,1,College of Arts and Letters,No,N/A,2,3,1,2,2,2,4,2,4,3,3,3,1,1,3,4,2,2,2,2,1,2,1,3,3,3,3,2,2,2,3,4
+16-18,Female,1,School of Statistics ,No,N/A,3,3,3,3,3,3,3,2,2,2,3,3,3,1,4,4,4,3,2,3,3,3,4,4,4,4,2,3,2,1,3,3
+19-21,Female,4,School of Statistics,Yes,"Academic, Cause Oriented",3,1,2,1,3,4,4,3,2,3,4,4,2,3,3,4,3,3,3,4,4,4,4,4,4,2,4,4,4,2,2,1

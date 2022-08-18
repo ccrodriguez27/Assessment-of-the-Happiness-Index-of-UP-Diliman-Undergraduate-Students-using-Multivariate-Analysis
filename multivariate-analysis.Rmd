@@ -1,0 +1,395 @@
+---
+title: "Assessment of the Happiness Index of UP Diliman Undergraduate Students using Multivariate Analysis"
+author: "Clarisse Rodriguez, Lara Elio, Iana Garcia"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(psych)
+library(MVN)
+library("GPArotation")
+library(MVN)
+library(devtools)
+library(factoextra)
+library(cluster)
+library(dendextend)
+library(psych)
+library(biotools)
+library(tidyverse)
+library(cluster)
+library(factoextra)
+library(knitr)
+```
+
+```{r}
+hpind<-read.csv('hpindex2.csv',fill=TRUE)
+```
+
+```{r}
+new_hp2<-hpind[,7:38] #removes columns on demographics
+
+names(new_hp2)<- c('happiness_level', 'vitamin_intake',  'enough_sleep', 'physical_activities', 'physical_appearance', 'sleep_quality', 'degree_prog_satisfaction', 'class_anticipation', 'class_participation', 'degree_program_performance', 'learnings', 'university_satisfaction', 'leisure_time', 'procrastination', 'hobbies', 'multimedia', 'pos_effect_social_med', 'positive_outlook', 'regrets', 'sense_of_meaning_purpose', 'optimism_of_future', 'life_control', 'rewarding_view_of_life', 'happiness_choice', 'family_relationship', 'peer_relationship', 'company_of_animals', 'love_and_affection', 'social_interaction', 'extra_curricular', 'campus_safety', 'safety_going_home')
+```
+
+```{r}
+kable(head(new_hp2))
+```
+
+```{r}
+kable(describe(new_hp2))
+```
+
+## A. Factor Analysis
+
+```{r}
+cor<-cor(new_hp2)
+#lowerCor(new_hp2)
+corPlot(new_hp2,numbers=T, MAR=0.5, labels = 1:32)
+```
+
+The correlation matrix above shows that the variables are not that correlated to each other. To evaluate the 'factorability' of the data, the Bartlett's test of Sphericity and Kaiser-Meyer-Olkin measure of sampling adequacy were performed.
+
+### A.1. Factorability Tests
+
+Bartlett's test of Sphericity tests the null hypothesis that the correlation matrix is an identity matrix, which means that the variables are unrelated and not ideal for factor analysis.
+
+```{r}
+cortest.bartlett(new_hp2)
+```
+
+Since the p-value is less than 0.05, we reject the null hypothesis that the variables are unrelated.
+
+```{r}
+KMO(new_hp2)
+```
+
+The overall Measure of Sampling Adequacy (MSA) for the set of variables is 0.8, indicating that correlations between pairs of variables can be explained by the other variables. Moreover, the individual MSAs are all above 0.5 hence, factor analysis is appropriate for the data.
+
+### A.2. Factor Analysis Proper
+
+To aid in the selection of the appropriate method to use for factor extraction, the variables were tested for multivariate normality.
+
+```{r}
+mvn(new_hp2,subset=NULL,multivariatePlot = "qq")
+```
+
+```{r}
+mvn_hz = mvn(new_hp2, mvnTest = "hz")
+mvn_royston = mvn(new_hp2, mvnTest = "royston")
+
+print(mvn_hz$multivariateNormality)
+print(mvn_royston$multivariateNormality)
+```
+
+The above tests rejected the assumption of multivariate normality. Because of this, the Maximum Likelihood Solution is not applicable. Thus, the Principal Components Solution will be used to estimate the factor scores.
+
+#### A.2.a. Principal Components Solution
+
+```{r}
+names(new_hp2) <- 1:32
+
+#standardize the data
+scaled.hp1<-scale(new_hp2)
+
+# obtain a parallel analysis on the standardized data to determine the number of factors
+fa.parallel(scaled.hp1, fa='fa')
+```
+
+Based on the parallel analysis scree plots, it is possible to extract 5-6 factors.
+
+PC solutions with no rotations would be considered first.
+
+```{r}
+# Extract factors from the standardized data.
+pcsolution1<-principal(scaled.hp1,nfactors=6,rotate="none")
+pcsolution1
+```
+
+```{r}
+# Getting the residual matrix: The residual matrix is a measure of how good our model is. Ideally, the residual matrix is close to null. 
+
+
+L<-pcsolution1$loadings
+llT<-L%*%t(L)
+uniqueness<-cor-llT
+
+m<-matrix(0,32,32) 
+diag(m)<-diag(uniqueness) 
+resmatrix<-cor-(llT+m)
+
+#head(resmatrix)
+hist(resmatrix)
+```
+
+```{r}
+fa.diagram(pcsolution1)
+pcsolution1
+pcsolution1$loadings
+pcsolution1$rotation
+pcsolution1$communality #variance explained
+pcsolution1$uniquenesses
+pcsolution1$values
+pcsolution1$values/length(pcsolution1$values)
+```
+
+![Components Analysis (No Rotation)](images/paste-BA052436.png){width="338"}
+
+The components analysis of the generated PC solutions with no rotation resulted in PC6 containing no variable. Different rotation methods would be explored.
+
+```{r}
+pcsolution3<-principal(scaled.hp1,nfactors=6,rotate="quartimax")
+fa.diagram(pcsolution3)
+pcsolution4<-principal(scaled.hp1,nfactors=6,rotate="equamax")
+fa.diagram(pcsolution4)
+```
+
+![Components Analysis (EQUAMAX and QUARTIMAX)](images/paste-CD1DDC49.png){width="337"}
+
+Variables 2 and 31 do not have corresponding factor assignments using EQUAMAX and QUARTIMAX rotations. This indicates that these rotations may not be appropriate for the data.
+
+```{r}
+# VARIMAX - maximizes the variability of loadings within a factor
+
+pcsolution1v<-principal(new_hp2,nfactors=6,rotate="varimax")
+fa.diagram(pcsolution1, main = 'Components Analysis - Varimax')
+
+```
+
+![Components Analysis (VARIMAX)](images/paste-5BD15980.png){width="339"}
+
+Compared to the other rotations, VARIMAX has the most dispersed set of variables. Moreover, there is only one variable that has no factor assignment. Because of this, VARIMAX will be used.
+
+```{r}
+pcsolution1v$loadings
+pcsolution1v$rotation
+pcsolution1v$communality
+pcsolution1v$uniquenesses
+pcsolution1v$values
+pcsolution1v$values/length(pcsolution1$values)
+
+L<-pcsolution1v$loadings
+llT<-L%*%t(L)
+uniqueness<-cor-llT
+m<-matrix(0,32,32) 
+diag(m)<-diag(uniqueness) 
+resmatrix<-cor-(llT+m)
+
+hist(resmatrix)
+```
+
+The residuals from the VARIMAX rotation are distributed along zero, indicating that the current factor model is adequate.
+
+```{r}
+pcsolution1v
+```
+
+The cumulative variance explained by the principal components is 52%. The table below summarizes the 6 factors obtained from the analysis and the corresponding variables categorized in each factor.
+
+![Summary of Factors](images/paste-A31F12AC.png)
+
+## B. Cluster Analysis
+
+```{r}
+
+#Extract the scores from VARIMAX
+pcscores<-factor.scores(new_hp2,f=pcsolution1v,method="Bartlett") 
+
+scoress<-pcscores$scores
+
+# Create clusters using the 6 factors from factor analysis
+res.agnes_fa <- agnes(scoress, method = "ward")
+
+pltree(res.agnes_fa, cex = 0.6, hang = -1,
+       main = "Dendrogram")
+```
+
+```{r}
+grp_fa <- cutree(as.hclust(res.agnes_fa), k = 4)
+fviz_cluster(list(data = scoress, cluster = grp_fa))
+
+```
+
+Utilizing all the 6 factors to form clusters, the cumulative variation explained by PC1 and PC2 is only 33.55%. Since this is low and the clusters overlap excessively, it was considered to remove some factors.
+
+```{r}
+# Multivariate Normality test
+mvn(scoress,subset=NULL,multivariatePlot = "qq")
+```
+
+```{r}
+hz_test = mvn(scoress, mvnTest = "hz")
+royston_test = mvn(scoress, mvnTest = "royston")
+```
+
+```{r}
+kable(hz_test$univariateNormality)
+```
+
+```{r}
+# Extract the factors that are univariate normal to create clusters. 
+pc_fin <- scoress[, -(4:6)]
+mvn(pc_fin,subset=NULL,multivariatePlot = "qq")
+```
+
+Upon the removal of the non-normal factors, the distribution of the data is closer to multivariate normal.
+
+### B.1. Hierarchical Clustering
+
+```{r}
+d<-dist(pc_fin, method="euclidean") 
+res.hc<-hclust(d,method="ward.D2") 
+plot(res.hc,cex=0.6,hang=-1) 
+```
+
+#### B.1.a. Agglomerative
+
+```{r}
+res.agnes <- agnes(pc_fin, method = "ward")
+# summary(res.agnes)
+res.agnes$ac
+```
+
+```{r}
+pltree(res.agnes, cex = 0.6, hang = -1,
+       main = "Dendrogram of agnes")
+```
+
+```{r}
+plot(as.dendrogram(res.agnes), cex = 0.6, 
+     horiz = TRUE)
+```
+
+```{r}
+grp <- cutree(as.hclust(res.agnes), k = 3)
+```
+
+```{r}
+table(grp)
+```
+
+The obtained coefficient from the agglomerative method is 0.9588. Since this is close to 1, we can conclude that the clustering using this method is already sufficient. Based on the dendogram, we can group the observations into three clusters. The first cluster contains 59 observations, the second cluster contains 57 observations, and the third cluster contains 43 observations. These clusters are plotted below.
+
+```{r}
+fviz_cluster(list(data=pc_fin, cluster=grp), main = 'Cluster Plot using Agglomerative Method')
+
+```
+
+From the cluster plot, PC1 and PC2 explain 66.8% of the total variability in the data. Compared to the previous cluster plot where all factors was utilized, the cluster plot using only 3 factors reduced the problem of excessive overlapping.
+
+#### B.1.b. Divisive
+
+```{r}
+res.diana <- diana(pc_fin)
+pltree(res.diana, cex = 0.6, hang = -1,
+       main = "Dendrogram of diana")
+
+```
+
+```{r}
+res.diana$dc 
+```
+
+```{r}
+grp_div <- cutree(as.hclust(res.diana), k = 3)
+# Number of members in each cluster
+table(grp_div)
+```
+
+```{r}
+fviz_cluster(list(data = pc_fin, cluster = grp_div))
+```
+
+The divisive coefficient is 91.29%. This is less than the obtained agglomerative coefficient of 95.88%, indicating that the agglomerative method produced better clustering.
+
+### B.2. Non-hierarchical Clustering
+
+#### B.2.a. K-means clustering
+
+```{r}
+df<-pc_fin
+df <- na.omit(df)
+df <- scale(df)
+head(df)
+distance <- get_dist(df)
+fviz_dist(distance, gradient = list(low = "#00AFBB", mid = "white", high = "red" )) #"#FC4E07"
+```
+
+```{r}
+func1 <- function(k) {
+  kmeans(df, k, nstart = 10 )$betweenss/(kmeans(df, k, nstart = 10 )$tot.withinss+kmeans(df, k, nstart = 10 )$betweenss)
+}
+```
+
+```{r}
+k.values <- 1:10
+values <- map_dbl(k.values, func1)
+plot(k.values, values,
+     type="b", pch = 19, frame = FALSE, 
+     xlab="Number of clusters K",
+     ylab="Metric")
+```
+
+### B.3. Optimal Number of Clusters
+
+```{r}
+fviz_nbclust(df, kmeans, method = "wss") 
+```
+
+```{r}
+fviz_nbclust(df, kmeans, method = "silhouette")
+```
+
+```{r}
+fviz_nbclust(df, kmeans, method = "gap_stat")
+```
+
+### B.4. Final Clusters and Insights
+
+```{r}
+final <- kmeans(df, 3, nstart = 25)
+print(final)
+```
+
+```{r}
+fviz_cluster(final, data = df)
+```
+
+### B.5. Discussion of the Clusters
+
+![Cluster Demographics](images/paste-598DD9D4.png)
+
+[*Cluster 1: Social Relationships Cluster*]{.underline}
+
+![Mean of the Variables in Cluster 1](images/paste-C9D681DA.png)
+
+This cluster is mainly composed of males, ages 19-21 years old. Majority of them are affiliated with organizations inside the campus. The top three colleges that comprise this cluster are School of Statistics, College of Engineering, and the College of Arts and Letters. Within this cluster, 76.27% have claimed that they are happy.
+
+From the table, most of the variables with high means in Cluster 1 belong to the Social Relationship Factor. These variables are positive effect of social media, family relationships, peer relationships, love and affection, and social interaction (outside comfort zone). From the Degree Program Factor, the variables learnings and company of animals have high means. From the Perspective Factor, university satisfaction; and from the Time Management Factor, Hobbies and Multimedia.
+
+With this, we can conclude that the happiness index of Cluster 1 is heavily influenced by the Social Relationship Factor and slightly influenced by Degree Program, Perspective, and Time Management Factors.
+
+[*Cluster 2: Perspective Cluster*]{.underline}
+
+![Mean of the Variables in Cluster 2](images/paste-66450CDE.png)
+
+This cluster is mainly composed of females, ages 19-21 years old. Majority of them are affiliated with organizations inside the campus. The top three colleges that comprise this cluster are School of Statistics, College of Engineering, and the College of Science. Within this cluster, 88% have claimed that they are happy.
+
+From the table, most of the variables with high means in Cluster 2 belong to the Perspective Factor. These variables are current level of happiness, university satisfaction, positive outlook, optimism about the future, rewarding view on life, and happiness is a choice. From the Social Relationships Factor, the variables family relationships and peer relationships have high means; and from the Time Management Factor, Hobbies and Multimedia. With this, we can conclude that the happiness index of Cluster 2 is heavily influenced by the Perspective Factor and slightly influenced by the Social Relationships and Time Management Factors.
+
+[*Cluster 3: Degree Program Cluster*]{.underline}
+
+![![Mean of the Variables in Cluster 3](images/paste-CE053E39.png)](images/paste-7F6E16B7.png)
+
+This cluster is mainly composed of females, ages 19-21 years old. Majority of them are affiliated with organizations inside the campus. The top three colleges that comprise this cluster are School of Statistics, College of Engineering, and the College of Social Sciences and Philosophy. Within this cluster, 63% have claimed that they are happy.
+
+From the table, most of the variables with high means in Cluster 3 belong to the Degree Program Factor. These variables are degree program satisfaction, class participation, performance in degree program, learnings, and company of animals. From the Time Management Factor, the variables hobbies and multimedia have high means; from the Perspective Factor, university satisfaction; from the Environmental Setting Factor, safety going home at night, and from the Social Relationship Factor, peer relationship.
+
+With this, we can conclude that the happiness index of Cluster 3 is heavily influenced by the Degree Program Factor and slightly influenced by the Time Management, Perspective, Environmental Setting, and Social Relationship Factors.
+
+Based on the characteristics of the clusters discussed above, it can be concluded that cluster 2 is the happiest cluster since it has the highest proportion of respondents who claimed that they are happy. It is followed by cluster 1 and then by cluster 3. It can also be deduced that students from the College of Science are the happiest, followed by those from the College of Arts and Letters, and the College of Social Sciences and Philosophy. The results that came from the School of Statistics and College of Engineering were not primarily considered since they dominated all the clusters. Also, the reason that they were included in the top three colleges per cluster may be attributed to the fact that most of the respondents came from the two colleges respectively, which is why they were omitted from the cluster characteristic interpretation. This may also be due to the fact that the convenience sampling procedure was used.
+
+Moreover, the Happiness Index of students from the College of Arts and Letters are mostly influenced by the Social Relationships Factor. As for the students in the College of Science, their Happiness Index is mostly influenced by the Perspective Factor while for the students in the College of Social Sciences and Philosophy, the Happiness Index is most affected by the Degree Program Factor. It is also important to note that the Time Management Factor and the Social Relationships Factor appear to influence all the three clusters.
